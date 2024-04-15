@@ -11,6 +11,8 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private TMP_Text _gemsWINText;
 
     [SerializeField] private GameObject _explosion;
+
+    private int _bestLevel;
     private Rigidbody2D _ball;
 
     private float _speed = 1.5f;
@@ -59,6 +61,12 @@ public class BallMovement : MonoBehaviour
 
             LevelsData.LevelCurrent++;
             PlayerPrefs.SetInt("LevelCurrent", LevelsData.LevelCurrent);
+
+            if (_bestLevel < LevelsData.LevelCurrent)
+            {
+                _bestLevel = LevelsData.LevelCurrent;
+                PlayerPrefs.SetInt("bestLevel", _bestLevel);
+            }
 
             StartCoroutine(MakeExplosionEffect());
             

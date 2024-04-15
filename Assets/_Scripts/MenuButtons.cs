@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
+    [SerializeField] private GameObject _levelsPanel;
     private void Start()
     {
         Screen.orientation = ScreenOrientation.Portrait;
@@ -13,6 +14,6 @@ public class MenuButtons : MonoBehaviour
 
     public void OpenGameScene()
     {
-        SceneManager.LoadScene("GameScene");
+        _levelsPanel.SetActive(true);
     }
 }

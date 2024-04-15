@@ -6,7 +6,7 @@ using TMPro;
 public class LevelsData : MonoBehaviour
 {
     [SerializeField] private TMP_Text _levelTEXT;
-    public static int LevelCurrent;
+    public static int LevelCurrent; 
 
     private void Start()
     {
