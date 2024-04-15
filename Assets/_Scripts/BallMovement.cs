@@ -54,13 +54,16 @@ public class BallMovement : MonoBehaviour
             _gemsWINText.text = $"{int.Parse(collision.gameObject.name)}";
             PlayerPrefs.SetInt("Gems", GemsData.GemsCount);
             _winPanel.SetActive(true);
+
+            LevelsData.LevelCurrent++;
+            PlayerPrefs.SetInt("LevelCurrent", LevelsData.LevelCurrent);
             Time.timeScale = 0;
         }
 
         else if (collision.gameObject.CompareTag("Border"))
         {
             _speed = 0;
-            GemsData.GemsCount -= 1;
+            GemsData.GemsCount -= LevelsData.LevelCurrent;
             if (GemsData.GemsCount < 0)
             {
                 GemsData.GemsCount = 0;
@@ -68,7 +71,7 @@ public class BallMovement : MonoBehaviour
             }
             else
             {
-                _gemsLOSTText.text = $"-1";
+                _gemsLOSTText.text = $"-{LevelsData.LevelCurrent}";
             }
             PlayerPrefs.SetInt("Gems", GemsData.GemsCount);
             _losePanel.SetActive(true);

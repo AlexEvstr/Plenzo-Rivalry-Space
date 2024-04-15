@@ -8,6 +8,7 @@ public class MenuButtons : MonoBehaviour
     private void Start()
     {
         Screen.orientation = ScreenOrientation.Portrait;
+        Time.timeScale = 1;
     }
 
     public void OpenGameScene()
