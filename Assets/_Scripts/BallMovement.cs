@@ -9,6 +9,8 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private GameObject _losePanel;
     [SerializeField] private TMP_Text _gemsLOSTText;
     [SerializeField] private TMP_Text _gemsWINText;
+
+    [SerializeField] private GameObject _explosion;
     private Rigidbody2D _ball;
 
     private float _speed = 1.5f;
@@ -51,13 +53,15 @@ public class BallMovement : MonoBehaviour
             GemsData.GemsCount += int.Parse(collision.gameObject.name);
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
             _gemsWINText.text = $"{int.Parse(collision.gameObject.name)}";
             PlayerPrefs.SetInt("Gems", GemsData.GemsCount);
-            _winPanel.SetActive(true);
 
             LevelsData.LevelCurrent++;
             PlayerPrefs.SetInt("LevelCurrent", LevelsData.LevelCurrent);
-            Time.timeScale = 0;
+
+            StartCoroutine(MakeExplosionEffect());
+            
         }
 
         else if (collision.gameObject.CompareTag("Border"))
@@ -78,5 +82,15 @@ public class BallMovement : MonoBehaviour
             Time.timeScale = 0;
 
         }
+    }
+
+    private IEnumerator MakeExplosionEffect()
+    {
+        GameObject explosion = Instantiate(_explosion);
+        explosion.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Destroy(explosion, 0.5f);
+        yield return new WaitForSeconds(0.6f);
+        _winPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 }
