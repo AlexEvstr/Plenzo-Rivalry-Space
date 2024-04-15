@@ -21,6 +21,7 @@ public class BallMovement : MonoBehaviour
 
     private void Start()
     {
+        _bestLevel = PlayerPrefs.GetInt("bestLevel", 1);
         _ball = GetComponent<Rigidbody2D>();
     }
 
