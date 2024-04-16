@@ -5,6 +5,7 @@ using UnityEngine;
 public class CirclesCollision : MonoBehaviour
 {
     [SerializeField] private GameSoundManager gameSoundManager;
+    [SerializeField] private VibroGameManager VibroGameManager;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,6 +18,7 @@ public class CirclesCollision : MonoBehaviour
     private IEnumerator MakeBiggerSize()
     {
         gameSoundManager.CircleCollisionSound();
+        VibroGameManager.VibroCircle();
         transform.localScale = new Vector3(0.65f, 0.65f, 0.65f);
         yield return new WaitForSeconds(0.25f);
         transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);

@@ -13,6 +13,7 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private GameObject _explosion;
 
     [SerializeField] private GameSoundManager gameSoundManager;
+    [SerializeField] private VibroGameManager VibroGameManager;
 
     private int _bestLevel;
     private Rigidbody2D _ball;
@@ -55,6 +56,7 @@ public class BallMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
+            VibroGameManager.VibroFinish();
             _speed = 0;
             GemsData.GemsCount += int.Parse(collision.gameObject.name);
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
@@ -90,6 +92,7 @@ public class BallMovement : MonoBehaviour
                 _gemsLOSTText.text = $"-{LevelsData.LevelCurrent}";
             }
             PlayerPrefs.SetInt("Gems", GemsData.GemsCount);
+            VibroGameManager.VibroLose();
             _losePanel.SetActive(true);
             Time.timeScale = 0;
 
@@ -103,6 +106,7 @@ public class BallMovement : MonoBehaviour
         explosion.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         Destroy(explosion, 0.5f);
         yield return new WaitForSeconds(0.6f);
+        VibroGameManager.VibroWin();
         _winPanel.SetActive(true);
         Time.timeScale = 0;
     }

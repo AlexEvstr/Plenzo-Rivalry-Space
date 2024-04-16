@@ -369,6 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &112500539
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +468,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2112868924}
         m_TargetAssemblyTypeName: GameSoundManager, Assembly-CSharp
         m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -612,6 +625,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2112868924}
         m_TargetAssemblyTypeName: GameSoundManager, Assembly-CSharp
         m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -794,6 +819,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2112868924}
         m_TargetAssemblyTypeName: GameSoundManager, Assembly-CSharp
         m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2021,6 +2058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &292425479
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2344,6 +2382,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroJump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &383621271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,6 +2691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &473973503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,6 +2824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &474738041
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3260,6 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &577987963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &600928763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,6 +3878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &641791792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,6 +4175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &672865000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,6 +4935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &834424516
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5896,6 +5953,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1023221197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6350,6 +6419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1188466612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6733,6 +6803,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228724493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6937,6 +7019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &1355510240
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7420,6 +7503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1429816911
 GameObject:
   m_ObjectHideFlags: 0
@@ -7582,6 +7666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1433607926
 GameObject:
   m_ObjectHideFlags: 0
@@ -8081,6 +8166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1543311239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8249,6 +8335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &1568162440
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8615,6 +8702,7 @@ MonoBehaviour:
   _gemsWINText: {fileID: 161997710}
   _explosion: {fileID: 357585941566606416, guid: e890d089c78964d089aa1ecd9a2e8a55, type: 3}
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1692714101
 GameObject:
   m_ObjectHideFlags: 0
@@ -8722,6 +8810,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1692714104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8808,6 +8908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!58 &1700684617
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9560,6 +9661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &1903900025
 GameObject:
   m_ObjectHideFlags: 0
@@ -9926,6 +10028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSoundManager: {fileID: 2112868924}
+  VibroGameManager: {fileID: 2112868926}
 --- !u!1 &2040858894
 GameObject:
   m_ObjectHideFlags: 0
@@ -10378,6 +10481,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2111304920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10432,6 +10547,7 @@ GameObject:
   - component: {fileID: 2112868923}
   - component: {fileID: 2112868924}
   - component: {fileID: 2112868925}
+  - component: {fileID: 2112868926}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10657,6 +10773,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2112868926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112868917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db32ab1836eb54b9a9747faa813db920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2124435589
 GameObject:
   m_ObjectHideFlags: 0
@@ -10755,6 +10883,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2112868924}
         m_TargetAssemblyTypeName: GameSoundManager, Assembly-CSharp
         m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2112868926}
+        m_TargetAssemblyTypeName: VibroGameManager, Assembly-CSharp
+        m_MethodName: VibroCLick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
