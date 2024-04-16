@@ -12,6 +12,8 @@ public class BallMovement : MonoBehaviour
 
     [SerializeField] private GameObject _explosion;
 
+    [SerializeField] private GameSoundManager gameSoundManager;
+
     private int _bestLevel;
     private Rigidbody2D _ball;
 
@@ -44,6 +46,7 @@ public class BallMovement : MonoBehaviour
         if (isGround)
         {
             _ball.AddForce(Vector2.up *_jumpForce, ForceMode2D.Impulse);
+            gameSoundManager.JumpSound();
             isGround = false;
         }
     }
@@ -95,6 +98,7 @@ public class BallMovement : MonoBehaviour
 
     private IEnumerator MakeExplosionEffect()
     {
+        gameSoundManager.FinishCollisionSound();
         GameObject explosion = Instantiate(_explosion);
         explosion.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         Destroy(explosion, 0.5f);
