@@ -90,4 +90,9 @@ public class MenuButtons : MonoBehaviour
     {
         _tutorial.SetActive(false);
     }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }
 }
